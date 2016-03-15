@@ -1,0 +1,30 @@
+<div class="panel panel-info">
+    <div class="panel-heading">编辑新闻-id:{{ new.id }}</div>
+    <div class="panel-body">
+        <form class="horizontal" role="form">
+            <div class="form-group">
+                <label for="newtitle" class="col-md-1 col-md-offset-2 control-label">标题</label>
+                <div class="col-md-6">
+                    <input type="text" placeholder="请填写标题" class="form-control" id="newtitle" ng-model="new.title" />
+                </div>
+            </div>
+            <br />
+            <br />
+            <br />
+            <div class="form-group">
+                <label for="newcontent" class="col-md-1 col-md-offset-2 control-label">内容</label>
+                <div class="col-md-6">
+                    <textarea id="newcontent" class="form-control" rows="5" placeholder="请填写内容"  ng-model="new.content"></textarea>
+                </div>
+            </div>
+            <br /><br /><br />
+            <br /><br /><br />
+            <br />
+            <div class="form-group">
+                <div class="col-md-offset-3 col-md-6">
+                    <button type="submit" class="col-md-12 btn btn-default" ng-click="edit()">提交</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

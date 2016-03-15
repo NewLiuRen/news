@@ -1,0 +1,17 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">{{ new.title }}</div>
+    <div class="panel-body">
+        {{ new.content }}
+        <span class="label label-info">{{ new.date | date:'yyyy-MM-dd HH:mm:ss' }}</span>
+    </div>
+    <div class="panel-footer">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="btn-group btn-group-justified">
+                    <a href="#/edit/{{ new.id }}" class="col-md-3 btn btn-default">编辑</a>
+                    <a href="#/" class="col-md-3 btn btn-default">返回</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

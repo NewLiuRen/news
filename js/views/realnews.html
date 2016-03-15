@@ -1,0 +1,13 @@
+<div>
+    <ol class="breadcrumb">
+      <li><a href="javascript:void(0);">首页</a></li>
+      <li class="active">新闻列表</li>
+    </ol>
+    <div class="list-group" ng-controller="realnewsController">
+        <a href="javascript:void(0);" class="list-group-item" ng-repeat="new in news">
+            <span class="badge">{{ new.date | date:'yyyy-MM-dd HH:mm:ss' }}</span>
+            <h4 class="list-group-item-heading">{{ new.title }}</h4>
+            <p class="list-group-item-text">{{ new.content }}</p>
+        </a>
+    </div>
+</div>

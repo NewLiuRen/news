@@ -1,0 +1,3 @@
+<ul class="nav nav-tabs" ng-controller="navController">
+    <li ng-repeat="nav in navs" ng-class="{true: 'active'}[nav === selectedNav]"  ng-click="select(nav)"><a href="{{ nav.href }}">{{ nav.content }}</a></li>
+</ul>
