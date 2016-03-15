@@ -94,10 +94,10 @@ app.controller('navController', ['$scope', '$rootScope', function ($scope, $root
 
     $scope.navs = $rootScope.navs;
 
-    $scope.selectedNav = $scope.navs[0];
+    $scope.selectedNav = $scope.navs[0].content;
 
     $scope.select = function (nav) {
-        $scope.selectedNav = $scope.nav;
+        $scope.selectedNav = nav.content;
     };
 
     $scope.$on('res2sendAddEvent', function (event, msg) {
