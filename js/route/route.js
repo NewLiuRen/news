@@ -1,4 +1,5 @@
 define(['app'], function (app) {
+
     return app.config(['$routeProvider', '$httpProvider', function ($routeProvider, $httpProvider) {
         $routeProvider
             .when('/', {
@@ -24,8 +25,7 @@ define(['app'], function (app) {
             .otherwise({
                 redirectTo : '/'
             });
-
-            $httpProvider.interceptors.push('timestampMarker');
     }]);
+
 });
 
