@@ -10,6 +10,7 @@ require.config({
         'realnews' : 'directives/realnews',
 
         'newfun' : 'services/newfun',
+        'timestampMarker' : 'services/timestampMarker',
 
         'route' : 'route/route',
 
@@ -37,7 +38,7 @@ require.config({
     }
 });
 
-require(['jquery', 'angular', 'angular-route', 'bootstrap', 'route', 'nav', 'realnews', 'newfun', 'route', 'app', 'addController', 'editController', 'listController', 'navController', 'realnewsController', 'sendMsg', 'showController'], function ($, angular) {
+require(['jquery', 'angular', 'angular-route', 'bootstrap', 'route', 'nav', 'realnews', 'newfun', 'timestampMarker', 'route', 'app', 'addController', 'editController', 'listController', 'navController', 'realnewsController', 'sendMsg', 'showController'], function ($, angular) {
 
     $(function () {
         angular.bootstrap(document, ['app']);

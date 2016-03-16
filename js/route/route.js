@@ -1,5 +1,5 @@
 define(['app'], function (app) {
-    return app.config(['$routeProvider', function ($routeProvider) {
+    return app.config(['$routeProvider', '$httpProvider', function ($routeProvider, $httpProvider) {
         $routeProvider
             .when('/', {
                 templateUrl : './js/views/newlist.html',
@@ -24,6 +24,8 @@ define(['app'], function (app) {
             .otherwise({
                 redirectTo : '/'
             });
+
+            $httpProvider.interceptors.push('timestampMarker');
     }]);
 });
 

@@ -23,6 +23,12 @@
             </div>
             <div class="col-md-3 col-md-offset-1" realnews ></div>
         </div>
+
+        <div class="modal" ng-if="loading">
+            <div class="loading">
+                <span ng-bind="loading_text"></span>
+            </div>
+        </div>
     </div>
 
     <script src="js/plugins/require.js" data-main="js/main"></script>

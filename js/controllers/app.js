@@ -9,6 +9,7 @@ define(['angular'], function (angular) {
         $http.get('./json/nav.json').success(function (data) {
             $rootScope.navs = data;
         });
+        $rootScope.loading_text = 'loading';
     }]);
 
     return app;
