@@ -7,7 +7,8 @@ define(['app'], function (app) {
             templateUrl : './js/views/nav.html',
             link : function (scope, ele, attr) {
                 scope.navs = $rootScope.navs;
-
+console.log(scope.navs);
+console.log($rootScope.navs);
                 scope.selectedNav = scope.navs[0].content;
 
                 scope.select = function (nav) {
