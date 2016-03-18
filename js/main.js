@@ -17,8 +17,6 @@ require.config({
         'addController' : 'controllers/addController',
         'editController' : 'controllers/editController',
         'listController' : 'controllers/listController',
-        'navController' : 'controllers/navController',
-        'realnewsController' : 'controllers/realnewsController',
         'sendMsg' : 'controllers/sendMsg',
         'showController' : 'controllers/showController'
     },
@@ -37,7 +35,7 @@ require.config({
     }
 });
 
-require(['jquery', 'angular', 'angular-route', 'bootstrap', 'route', 'nav', 'realnews', 'newfun', 'route', 'app', 'addController', 'editController', 'listController', 'navController', 'realnewsController', 'sendMsg', 'showController'], function ($, angular) {
+require(['jquery', 'angular', 'angular-route', 'bootstrap', 'route', 'nav', 'realnews', 'newfun', 'app', 'addController', 'editController', 'listController', 'sendMsg', 'showController'], function ($, angular) {
 
     $(function () {
         angular.bootstrap(document, ['app']);
