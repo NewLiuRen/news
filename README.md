@@ -2,4 +2,4 @@
 
 在前端可以实时增加条目，通过angular的双向数据绑定可实时查看添加结果
 
-[demo:http://newliuren.github.io/news/#/](http://newliuren.github.io/news/#/)
+demo:[http://newliuren.github.io/news/#/](http://newliuren.github.io/news/#/)
